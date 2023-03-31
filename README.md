@@ -28,10 +28,10 @@ Things you may want to cover:
 # アプリケーション概要
  一人旅が好きな女性向け情報交換アプリ
 # デプロイURL
- 
+ https://travel-app-gtc7.onrender.com
 # テスト用アカウント
-  ・Basic認証パスワード：
-  ・Basic認証ID：
+  ・Basic認証パスワード：0401
+  ・Basic認証ID：admin
   ・メールアドレス：
   ・パスワード：
 # 利用方法
