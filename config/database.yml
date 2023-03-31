@@ -19,6 +19,9 @@ default: &default
 
 development:
   <<: *default
+  username: root
+  password:
+  host: localhost
   database: travel_app_development
 
 # Warning: The database defined as "test" will be erased and
@@ -26,6 +29,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  adapter: mysql2
+  username: root
+  password:
+  host: localhost
   database: travel_app_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
