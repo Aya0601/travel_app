@@ -32,8 +32,8 @@ Things you may want to cover:
 # テスト用アカウント
   ・Basic認証パスワード：0401
   ・Basic認証ID：admin
-  ・メールアドレス：
-  ・パスワード：
+  ・メールアドレス：test@com
+  ・パスワード：123qweasd
 # 利用方法
  # 情報投稿
  ・トップページからユーザー新規登録を行う
@@ -44,7 +44,7 @@ Things you may want to cover:
 # アプリケーションを作成した背景
  自分自身が一人旅が好きであったため、女性が一人でも入りやすい飲食店や宿、可愛いショップなどの情報が手軽に調べられるツールが欲しいと考えていたため。
 # 洗い出した要件
-
+ https://docs.google.com/spreadsheets/d/1undiMZKJ-yuypWevWGj_IKdqUDb35VqrFST5TuiLxVE/edit?usp=sharing
 # 実装した機能についての画像やGifおよびその説明
 
 # 実装予定の機能
