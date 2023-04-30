@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:edit, :show]
   def index
     @posts = Post.all
   end
@@ -15,10 +16,24 @@ class PostsController < ApplicationController
     tweet = Tweet.find(params[:id])
     tweet.destroy
   end
-  
+
+  def edit
+  end
+
+  def update
+    post = Post.find(params[:id])
+    post.update(post_params)
+  end
+
+  def show
+  end
+
   private
   def post_params
     params.require(:post).permit(:name, :image, :text)
+  end
+  def set_post
+    @post = Post.find(params[:id])
   end
 
 end
