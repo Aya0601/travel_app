@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
     create_table :posts do |t|
       t.references :user, null: false
       t.string :title, null: false
-      t.string :text, null: false
+      t.text :text, null: false
       t.integer :genre_id, null: false
       t.integer :area_id, null: false
       t.timestamps
