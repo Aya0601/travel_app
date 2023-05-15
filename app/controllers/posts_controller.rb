@@ -15,8 +15,8 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    tweet = Tweet.find(params[:id])
-    tweet.destroy
+    post = Post.find(params[:id])
+    post.destroy
   end
 
   def edit
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:name, :image, :text)
+    params.require(:post).permit(:name, :image, :text).merge(user_id: current_user.id)
   end
   def set_post
     @post = Post.find(params[:id])
