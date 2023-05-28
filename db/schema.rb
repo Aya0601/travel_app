@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2023_05_21_154635) do
     t.text "text", null: false
     t.integer "genre_id", null: false
     t.integer "area_id", null: false
+    t.text "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
